@@ -23,11 +23,13 @@ class ArtistsController < ApplicationController
    	@site = "https://embed.spotify.com/?theme=white&uri=spotify:trackset:My Playlist:"+ @string
 
 
+
    else
      redirect_to root_path
    end
 
-
+  rescue
+  redirect_to root_path, error: 'Something bad happened'
 
  end
 end
