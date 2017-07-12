@@ -1,7 +1,7 @@
 class ArtistsController < ApplicationController
 	def index
-	RSpotify.authenticate("274c263d612142c483a5989ea1528a21", "0b9514e562874d2897d796259dbbf858")
-
+	# RSpotify.authenticate("274c263d612142c483a5989ea1528a21", "0b9514e562874d2897d796259dbbf858")
+  RSpotify.authenticate(ENV["spotify_client_id"], ENV["spotify_client_secret"])
    if !params[:artist_name].empty?
    	@arr_artist = params[:artist_name].split(',')
 
