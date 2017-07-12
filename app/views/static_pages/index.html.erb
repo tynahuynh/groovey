@@ -7,11 +7,13 @@
 	    		</br>
 	            <div id="custom-search-input">
 	                <div class="input-group col-md-12">
+	                	<form id="input_form" action="/artists" >
 	                	<%= form_tag artists_path, method: "get", html: { class: "form" } do %>
 		   					<%= text_field_tag(:artist_name, "", placeholder: "ex: Britney Spears, Nirvana, Muse...", class: "form-control input-lg") %>
 		   				<% end %>
+		   				</form>
 	                    <span class="input-group-btn">
-	                        <button class="btn btn-info btn-lg" type="button">
+	                        <button class="btn btn-info btn-lg" type="submit" form="input_form">
 	                            <i class="glyphicon glyphicon-search"></i>
 	                        </button>
 	                    </span>
