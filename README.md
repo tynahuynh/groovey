@@ -23,6 +23,9 @@ rake db:migrate
 
 The application should now be running on your localhost.
 
+## Setup
+A Spotify project is needed to add credentials. Visit https://developer.spotify.com/ to sign up for an app and more information.
+
 ## Deployment
 To deploy on Heroku. Adjust the APP_NAME to your project name.
 ```
