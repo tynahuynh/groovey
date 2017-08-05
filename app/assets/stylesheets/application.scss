@@ -31,6 +31,14 @@ background: url('bg.jpg') no-repeat center center fixed;
   align-items: center;
   justify-content: center;
 }
+.container-home {
+  height: 75%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}
 
 .player-container {
   height: 70%;
@@ -92,10 +100,28 @@ h1 {
   text-shadow: 0px 0px 2px #000000;
 }
 
+.home {
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  font-size: 90px;
+  text-shadow: 0px 0px 2px #000000;
+  margin-bottom: 0px;
+}
+
 h4 {
   color: #FFFFFF;
   text-align: center;
   font-family: 'Lobster', cursive;
   text-shadow: 0px 0px 1px #000000;
 
+}
+
+h3 {
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  text-shadow: 0px 0px 1px #000000;
+  margin-top: 0px;
+  text-decoration: none;
 }
