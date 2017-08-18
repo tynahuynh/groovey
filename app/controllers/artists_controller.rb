@@ -18,7 +18,7 @@ class ArtistsController < ApplicationController
 
     # @random_tracks = @tracks_id.shuffle.first(30)
 
-    # @string = @random_tracks.join(",")
+
     playlist = @spotify_user.create_playlist!('groovey')
 
     playlist.add_tracks!(@tracks_arr)
